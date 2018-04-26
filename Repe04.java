@@ -8,15 +8,16 @@ public class Repe04 {
       2: Restar
     */
     Scanner reader = new Scanner(System.in);
+    int d = -1;
     do {
-      System.out.print("Elija Menu:\n");
+      System.out.print("\nElija Menu:\n");
       System.out.println("0: salir");
       System.out.println("1: sumar");
-      System.out.println("2: restar\n");
-      int d = reader.nextInt();
+      System.out.println("2: restar");
+      d = reader.nextInt();
       switch (d) {
               case 0:  System.out.print("Bye");
-                        System.exit(0);
+                       // System.exit(0);
                        break;
               case 1:  
                     System.out.print("Ingrese a y b:");
@@ -32,6 +33,6 @@ public class Repe04 {
                        break;
       }
       System.out.println("Selecciono="+d);
-    } while (true);
+    } while (d!=0);
   }
 }
